@@ -15,8 +15,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/product/view/:id" element={<ViewProductPage />} />
+          <Route path="/" element={<HomePage dataUser={userData} />} />
+          <Route
+            path="/product/view/:id"
+            element={<ViewProductPage dataUser={userData} />}
+          />
         </Routes>
       </Router>
     </div>

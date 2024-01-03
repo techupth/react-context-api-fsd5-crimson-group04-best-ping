@@ -2,12 +2,12 @@ import { useNavigate } from "react-router-dom";
 import AppHeader from "../components/AppHeader";
 import products from "../data/products.js";
 
-function HomePage() {
+function HomePage(props) {
   const navigate = useNavigate();
   return (
     <div>
       <div className="app-wrapper">
-        <AppHeader />
+        <AppHeader dataUser={props.dataUser} />
       </div>
       <div className="product-list">
         {products.map((product) => {
