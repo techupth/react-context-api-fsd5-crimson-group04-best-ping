@@ -7,7 +7,7 @@ function HomePage(props) {
   return (
     <div>
       <div className="app-wrapper">
-        <AppHeader dataUser={props.dataUser} />
+        <AppHeader />
       </div>
       <div className="product-list">
         {products.map((product) => {
